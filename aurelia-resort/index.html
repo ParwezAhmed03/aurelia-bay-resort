@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aurelia Bay Resort & Spa | Luxury Beachfront Escape</title>
+  <meta name="description" content="Aurelia Bay Resort & Spa - a luxury beachfront retreat with private villas, an award-winning spa and unforgettable experiences." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-mark">A</span>
+        <span class="brand-text">Aurelia <small>Bay Resort &amp; Spa</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#amenities">Amenities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Guests</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-gold btn-sm" href="#contact">Book Your Stay</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="home">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="--img:url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2000&q=80')"></div>
+      <div class="hero-slide" style="--img:url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=2000&q=80')"></div>
+      <div class="hero-slide" style="--img:url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=2000&q=80')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <p class="eyebrow reveal">Five-Star Beachfront Retreat</p>
+      <h1 class="reveal delay-1">Where the Ocean <em>Meets</em> Serenity</h1>
+      <p class="lead reveal delay-2">Private villas, barefoot luxury and moments that stay with you long after the tide goes out.</p>
+      <div class="d-flex flex-wrap gap-3 reveal delay-3">
+        <a href="#contact" class="btn btn-gold btn-lg">Reserve Your Escape</a>
+        <a href="#about" class="btn btn-outline-light btn-lg">Discover More</a>
+      </div>
+    </div>
+
+    <!-- Quick booking bar -->
+    <div class="container booking-wrap">
+      <form class="booking-bar reveal delay-3" id="quickBooking" novalidate>
+        <div class="row g-3 align-items-end">
+          <div class="col-6 col-lg-3">
+            <label for="qbIn" class="form-label">Check-in</label>
+            <input type="date" class="form-control" id="qbIn" required />
+          </div>
+          <div class="col-6 col-lg-3">
+            <label for="qbOut" class="form-label">Check-out</label>
+            <input type="date" class="form-control" id="qbOut" required />
+          </div>
+          <div class="col-6 col-lg-3">
+            <label for="qbGuests" class="form-label">Guests</label>
+            <select class="form-select" id="qbGuests">
+              <option>1 Guest</option>
+              <option selected>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4 Guests</option>
+              <option>5+ Guests</option>
+            </select>
+          </div>
+          <div class="col-6 col-lg-3">
+            <button type="submit" class="btn btn-gold w-100">Check Availability</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><i class="bi bi-chevron-double-down"></i></a>
+  </header>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal-left">
+          <div class="about-images">
+            <div class="img-frame main"><img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=900&q=80" alt="Resort infinity pool at sunset" loading="lazy" /></div>
+            <div class="img-frame accent"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80" alt="Spa treatment room" loading="lazy" /></div>
+            <div class="badge-years"><strong>15</strong><span>Years of<br/>Hospitality</span></div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal-right">
+          <p class="eyebrow dark">About Aurelia Bay</p>
+          <h2 class="section-title">A sanctuary crafted for the <em>art of slowing down</em></h2>
+          <p class="text-muted-custom">Set along a private crescent of white sand, Aurelia Bay blends contemporary architecture with the warmth of island living. Every villa opens to the sea, every meal is sourced from nearby farms and waters, and every member of our team is devoted to making your stay effortless.</p>
+          <p class="text-muted-custom">Whether you come to celebrate, reconnect or simply do nothing at all, we shape each day around you.</p>
+
+          <div class="row g-4 stats mt-4">
+            <div class="col-4"><h3 class="counter" data-target="62">0</h3><p>Luxury Villas</p></div>
+            <div class="col-4"><h3 class="counter" data-target="9">0</h3><p>Dining Venues</p></div>
+            <div class="col-4"><h3 class="counter" data-target="98" data-suffix="%">0</h3><p>Guest Satisfaction</p></div>
+          </div>
+          <a href="#contact" class="btn btn-dark-outline mt-4">Plan Your Visit <i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AMENITIES ============ -->
+  <section class="section section-sand" id="amenities">
+    <div class="container">
+      <div class="text-center mx-auto section-head reveal">
+        <p class="eyebrow dark">Amenities</p>
+        <h2 class="section-title">Everything you need, <em>and more</em></h2>
+        <p class="text-muted-custom">Thoughtful details and world-class facilities, designed for complete comfort.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="amenity-card">
+            <div class="icon"><i class="bi bi-water"></i></div>
+            <h3>Infinity Pool</h3>
+            <p>A 60-metre heated pool that melts into the horizon, with sunken lounges and poolside service.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-1">
+          <div class="amenity-card">
+            <div class="icon"><i class="bi bi-flower1"></i></div>
+            <h3>Signature Spa</h3>
+            <p>Ayurvedic rituals, hot-stone therapies and couples' suites set within a tropical garden.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-2">
+          <div class="amenity-card">
+            <div class="icon"><i class="bi bi-cup-hot"></i></div>
+            <h3>Fine Dining</h3>
+            <p>Nine venues from sunrise breakfasts to candle-lit seafood dinners on the sand.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="amenity-card">
+            <div class="icon"><i class="bi bi-heart-pulse"></i></div>
+            <h3>Wellness &amp; Yoga</h3>
+            <p>Daily sunrise yoga, guided meditation and a fully equipped open-air fitness pavilion.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-1">
+          <div class="amenity-card">
+            <div class="icon"><i class="bi bi-balloon-heart"></i></div>
+            <h3>Kids' Club</h3>
+            <p>Supervised adventures, treasure hunts and creative workshops for young explorers.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-2">
+          <div class="amenity-card">
+            <div class="icon"><i class="bi bi-car-front"></i></div>
+            <h3>Private Transfers</h3>
+            <p>Chauffeured airport pickups and a dedicated concierge available around the clock.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCES ============ -->
+  <section class="section" id="experiences">
+    <div class="container">
+      <div class="text-center mx-auto section-head reveal">
+        <p class="eyebrow dark">Activities</p>
+        <h2 class="section-title">Curated <em>experiences</em></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4 reveal">
+          <article class="exp-card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Sunset sailing" loading="lazy" />
+            <div class="exp-body"><span>Sea</span><h3>Sunset Sailing</h3><p>Glide across the bay with champagne as the sky turns gold.</p></div>
+          </article>
+        </div>
+        <div class="col-md-4 reveal delay-1">
+          <article class="exp-card">
+            <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80" alt="Private dining by the pool" loading="lazy" />
+            <div class="exp-body"><span>Dining</span><h3>Private Beach Dinner</h3><p>A chef's tasting menu served at your own table by the waves.</p></div>
+          </article>
+        </div>
+        <div class="col-md-4 reveal delay-2">
+          <article class="exp-card">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Island nature trail" loading="lazy" />
+            <div class="exp-body"><span>Nature</span><h3>Jungle &amp; Waterfall Trek</h3><p>Guided walks through rainforest to hidden swimming pools.</p></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA 1 ============ -->
+  <section class="cta-banner" id="offer">
+    <div class="container text-center reveal">
+      <p class="eyebrow">Limited-time offer</p>
+      <h2>Stay 4 nights, <em>pay for 3</em></h2>
+      <p class="lead">Plus complimentary breakfast, a 60-minute spa treatment and airport transfers.</p>
+      <a href="#contact" class="btn btn-gold btn-lg">Claim This Offer</a>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="text-center mx-auto section-head reveal">
+        <p class="eyebrow dark">Gallery</p>
+        <h2 class="section-title">A glimpse of <em>paradise</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <a href="#" class="g-item tall" data-full="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1600&q=80"><img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=800&q=80" alt="Resort villa exterior" loading="lazy" /></a>
+        <a href="#" class="g-item" data-full="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1600&q=80"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Pool and palm trees" loading="lazy" /></a>
+        <a href="#" class="g-item" data-full="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1600&q=80"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80" alt="Spa candles and stones" loading="lazy" /></a>
+        <a href="#" class="g-item wide" data-full="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80" alt="Tropical beach" loading="lazy" /></a>
+        <a href="#" class="g-item" data-full="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1600&q=80"><img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Luxury suite interior" loading="lazy" /></a>
+        <a href="#" class="g-item tall" data-full="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1600&q=80"><img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Resort lobby" loading="lazy" /></a>
+        <a href="#" class="g-item" data-full="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1600&q=80"><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Poolside villa" loading="lazy" /></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox modal -->
+  <div class="modal fade" id="lightbox" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bg-transparent border-0">
+        <button type="button" class="btn-close btn-close-white ms-auto mb-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="lightbox-stage">
+          <button class="lb-nav prev" id="lbPrev" aria-label="Previous"><i class="bi bi-chevron-left"></i></button>
+          <img id="lbImg" src="" alt="Gallery image" class="img-fluid rounded" />
+          <button class="lb-nav next" id="lbNext" aria-label="Next"><i class="bi bi-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section section-sand" id="testimonials">
+    <div class="container">
+      <div class="text-center mx-auto section-head reveal">
+        <p class="eyebrow dark">Guest Stories</p>
+        <h2 class="section-title">Loved by guests <em>worldwide</em></h2>
+      </div>
+      <div id="reviewCarousel" class="carousel slide reveal" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <blockquote class="review">
+              <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <p>"The most relaxing week of our lives. The villa, the staff, the food - every detail felt personal."</p>
+              <footer>Priya &amp; Rohan, Mumbai</footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="review">
+              <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <p>"We celebrated our anniversary here. The beach dinner was pure magic, and the spa was unforgettable."</p>
+              <footer>Daniel Hughes, London</footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="review">
+              <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <p>"Perfect for families. The kids loved the club while we enjoyed the pool and sunsets."</p>
+              <footer>The Almeida Family, Lisbon</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="carousel-indicators custom-dots">
+          <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="0" class="active" aria-label="Review 1"></button>
+          <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="1" aria-label="Review 2"></button>
+          <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="2" aria-label="Review 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / ENQUIRY ============ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="row g-5 align-items-stretch">
+        <div class="col-lg-5 reveal-left">
+          <p class="eyebrow">Enquiry</p>
+          <h2 class="section-title text-white">Begin your <em>escape</em></h2>
+          <p class="contact-lead">Tell us about your dream stay and our reservations team will reply within 24 hours with a personalised proposal.</p>
+          <ul class="contact-list">
+            <li><i class="bi bi-geo-alt"></i><span>Aurelia Bay, Coastal Road, Goa, India</span></li>
+            <li><i class="bi bi-telephone"></i><a href="tel:+911234567890">+91 12345 67890</a></li>
+            <li><i class="bi bi-envelope"></i><a href="mailto:stay@aureliabay.example">stay@aureliabay.example</a></li>
+            <li><i class="bi bi-clock"></i><span>Reservations: 8am - 10pm daily</span></li>
+          </ul>
+          <div class="social">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-7 reveal-right">
+          <form class="enquiry-form" id="enquiryForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Full name *</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required minlength="2" />
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required />
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="phone" class="form-label">Phone *</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="+91 98765 43210" required pattern="[0-9+\-\s()]{7,15}" />
+                <div class="invalid-feedback">Please enter a valid phone number.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="roomType" class="form-label">Room type</label>
+                <select class="form-select" id="roomType" name="roomType">
+                  <option>Ocean View Suite</option>
+                  <option>Private Pool Villa</option>
+                  <option>Beachfront Villa</option>
+                  <option>Family Residence</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="checkin" class="form-label">Check-in *</label>
+                <input type="date" class="form-control" id="checkin" name="checkin" required />
+                <div class="invalid-feedback">Select a date.</div>
+              </div>
+              <div class="col-md-4">
+                <label for="checkout" class="form-label">Check-out *</label>
+                <input type="date" class="form-control" id="checkout" name="checkout" required />
+                <div class="invalid-feedback" id="checkoutFeedback">Must be after check-in.</div>
+              </div>
+              <div class="col-md-4">
+                <label for="guests" class="form-label">Guests</label>
+                <input type="number" class="form-control" id="guests" name="guests" min="1" max="10" value="2" />
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Special requests, occasions, dietary needs..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-gold btn-lg w-100"><span class="btn-label">Send Enquiry</span></button>
+              </div>
+            </div>
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+              <i class="bi bi-check-circle-fill"></i>
+              <h3>Thank you!</h3>
+              <p>Your enquiry has been received. We'll be in touch within 24 hours.</p>
+              <button type="button" class="btn btn-outline-light btn-sm" id="formReset">Send another enquiry</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA 2 ============ -->
+  <section class="cta-strip">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <h3 class="mb-0">Ready for the stay you'll never forget?</h3>
+      <a href="#contact" class="btn btn-dark-solid">Book Now</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="navbar-brand mb-3 d-inline-flex" href="#home">
+            <span class="brand-mark">A</span>
+            <span class="brand-text">Aurelia <small>Bay Resort &amp; Spa</small></span>
+          </a>
+          <p>A beachfront sanctuary where luxury feels effortless. Wake to the sound of waves and let the days unfold.</p>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <h4>Explore</h4>
+          <ul class="list-unstyled">
+            <li><a href="#about">About</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="tel:+911234567890">+91 12345 67890</a></li>
+            <li><a href="mailto:stay@aureliabay.example">stay@aureliabay.example</a></li>
+            <li><a href="#contact">Enquire</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h4>Newsletter</h4>
+          <form class="newsletter" id="newsletterForm" novalidate>
+            <input type="email" class="form-control" placeholder="Your email" aria-label="Email for newsletter" required />
+            <button class="btn btn-gold" type="submit" aria-label="Subscribe"><i class="bi bi-arrow-right"></i></button>
+          </form>
+          <small class="newsletter-msg" id="newsletterMsg"></small>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Aurelia Bay Resort &amp; Spa. All rights reserved.</span>
+        <span>Designed for the Brand Elite web developer assignment.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" class="to-top" id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
